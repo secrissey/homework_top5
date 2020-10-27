@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="banner">
+    <h1 class="header-text">Here are my top 5 Artitsts!</h1>
+</header>
+
+    {% for name in list_names %}
+        <h3>{{ name }}</h3>
+    {% endfor %}
+
+{% endblock content %}
